@@ -2,13 +2,85 @@
 <html>
 <head>
   <title>Rdeandrade</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "css/style" %>
+  <%= stylesheet_link_tag    "css/style9" %>
+  <%= stylesheet_link_tag    "css/demo" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="container">
+  <header>
+    <nav>
+    <div id="logo"> <%= image_tag "logo.png" %></div>
+    
+    <div id="nav_social">
+      <a href="https://www.facebook.com/rhdeandrade" target="_blank"> <%= image_tag "facebook_32.png", :alt => "Facebook" %></a>
+      <a href="https://twitter.com/RHdeAndrade" target="_blank"> <%= image_tag "twitter_32.png", :alt => "Twitter" %></a>
+      <a href="http://www.linkedin.com/pub/raphael-de-andrade/2a/b81/214" target="_blank"> <%= image_tag "linkedin_32.png", :alt => 'Linkedin' %></a>
+      <a><%= image_tag "email_32.png", :width => 32,  :height => 32 %></a> 
+    </div>
+    <nav>
+  </header>
 
-<%= yield %>
+  <div class="content">
 
+    <ul class="ca-menu">
+      <li>
+          <a href="http://rubyonrails.org/" target="_blank">
+              <span class="ca-icon"><%= image_tag "ruby.png", :height => 80 %></span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Ruby On Rails</h2>
+                  <h3 class="ca-sub">Learn More</h3>
+              </div>
+          </a>                    </li>
+      <li>
+          <a href="http://writecodeonline.com/javascript/" target="_blank">
+              <span class="ca-icon"><%= image_tag "js.png", :height => 80 %></span>
+              <div class="ca-content">
+                  <h2 class="ca-main">JavaScript</h2>
+                  <h3 class="ca-sub">Try It</h3>
+              </div>
+          </a>                    </li>
+      <li>
+          <a href="http://en.wikipedia.org/wiki/Web_development" target="_blank">
+              <span class="ca-icon">C</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Web Programming</h2>
+                  <h3 class="ca-sub">Learn More</h3>
+              </div>
+          </a>                    </li>
+      <li>
+          <a href="http://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">
+              <span class="ca-icon">S</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">A.I.</h2>
+                  <h3 class="ca-sub">Mester Research</h3>
+              </div>
+          </a>                    
+      </li>
+    </ul>
+  
+  <middle>    
+    <div class="enter"><P >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non diam in neque blandit commodo. Quisque lobortis sollicitudin nisl pulvinar condimentum. Sed est diam, hendrerit id dignissim vel, adipiscing interdum elit. Vivamus a laoreet eros. Pellentesque sollicitudin pretium fermentum.<br></P>
+      <div class="imgteaser">
+        <a href="#"><%= image_tag "p1.png", :width => 413, :height => 220 %><span class="desc">
+          <strong>TODO 2011 - Lorem Ipsum quntum</strong>
+          Blandit turpis patria euismod at iaceo appellatio, demoveo esse.</span></a></div>
+        </div>  
+    <div class="section_slogan"><%= image_tag "quote-left.png" %><span class="cursive"> Minha frase de efeito </span><%= image_tag "quote-right.png" %></div>
+  </middle>
+  <%= yield %>
+  <footer>  
+    <div id="footer">
+      <summary>
+      <p><a href="https://github.com/rhdeandrade/rhdeandrade" target="_blank">RdeAndrade on GitHub</a>
+      Copyright &copy; rdeandrade.com -2012.</p></summary><p></p>
+      </details>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
