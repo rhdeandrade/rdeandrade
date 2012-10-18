@@ -39,11 +39,11 @@ main {
 }
 .content .abox figure a:hover {
 	-moz-border-radius:19px;
--webkit-border-radius:19px;
-border-radius:19px;
--moz-box-shadow:0px 0px 11px #000000;
--webkit-box-shadow:0px 0px 11px #000000;
-box-shadow:0px 0px 11px #000000;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	-moz-box-shadow:0px 0px 11px #000000;
+	-webkit-box-shadow:0px 0px 11px #000000;
+	box-shadow:0px 0px 11px #000000;
 	opacity: 0.5;
 	-moz-transition: all 400ms linear 0s;
 	
@@ -52,6 +52,7 @@ box-shadow:0px 0px 11px #000000;
 	float: right;
 	width: 140px;
 	margin-top: 15px;
+	margin-right: 350px;
 }
 #logo {
 	float: left;
@@ -158,9 +159,8 @@ input#search-btn{
 	background:url(../search-btn.png) no-repeat center;
 }
 footer {
-	background-image: url(../footer_bg.png);
-	background-repeat: repeat-x;
-	height: 400px;
+	
+	
 	width: 100%;
 	margin: auto;
 	clear: both;
@@ -193,7 +193,7 @@ opacity: 0.5;
 }
 #footer {
 	width: 1125px;
-	height: 200px;
+	height: 10px;
 	text-align: left;
 	position: relative;
 	line-height: 1.5em;
